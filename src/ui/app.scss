@@ -1,0 +1,66 @@
+body {
+    padding: 20px;
+    background-color: #fffdda;
+}
+
+.rotating-icon {
+    display: inline-block;
+    animation: spin 1s infinite linear;
+}
+
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 1rem !important;
+        color: #27807c;
+    }
+    hr {
+        border-color: #27807c;
+        width: 50vw;
+    }
+
+    .btn-address {
+        background-color: #27807c;
+        border-radius: 8px;
+        color: white;
+        padding: 0.7rem;
+        border: none;
+    }
+
+    .btn-fb {
+        background-color: rgb(109, 62, 1);
+        border-radius: 8px;
+        color: white;
+        padding: 0.7rem;
+        border: none;
+    }
+    .address {
+        width: 45vw;
+        background-color: #8eebe6;
+        border-radius: 10px;
+        padding: 1rem;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes twist-up {
+    to {
+        transform: rotateX(360deg);
+    }
+}
